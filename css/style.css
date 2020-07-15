@@ -1,0 +1,224 @@
+jo6o/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body{
+    font-family: "蘋方-繁","微軟正黑體", sans-serif;
+}
+.wrap{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+/* header */
+.header{
+    background: url('../img/Hero.png') no-repeat;
+    text-align: center;
+}
+.header h1{
+    font-size: 40px;
+    color: #FFFFFF;
+    letter-spacing: 3.89px;
+    padding: 90px 0 100px 0;
+}
+.header .selectdist{
+    /*移除箭頭樣式*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background: url("../img/icons_down.png") no-repeat center right 10px;  /*改變右邊箭頭樣式*/
+    background-color: rgba(255,255,255,0.70);
+    border: 3px solid #FFFFFF;
+    border-radius: 3px;
+    width: 452px;
+    height: 48px;
+    outline: none;
+    font-size: 24px;
+    padding: 0 10px 0 10px;
+    text-align: center;
+}
+.header .hotdist{
+    margin: 80px auto 0 auto;
+    width: 800px;   
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    border-radius: 5px;
+}
+.header .hotdist h3{
+    text-align: left;
+    font-size: 18px;
+    padding: 20px 26px;
+}
+.header .hotdist ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 21px;
+}
+.header .hotdist input{
+    width: 130px;
+    height: 42px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    margin-left: 30px;
+    margin-bottom: 18px;
+    transition: all 0.3s;
+}
+/* Btn Color */
+.hotdist input.lingyabtn{
+    background:#8A82CC;
+}
+.hotdist input.sanminbtn{
+    background:#FFA782;
+}
+.hotdist input.xinxingbtn{
+    background:#F5D005;
+}
+.hotdist input.yanchengbtn{
+    background:#559AC8;
+}
+
+.header .hotdist input:hover{
+    border: 5px solid #aaa;
+}
+.header .hotdist input:active{
+    background: #aaa;
+}
+/* hr-line style */
+hr{
+    width: 900px;
+    border: dashed 1px #559AC8;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    background-color: transparent !important ; /* 顏色透明 */
+    position: relative;
+    overflow: visible;
+    text-align: center;
+}
+hr::after {
+    position: absolute;
+    top: -0.5em;
+    left: 49%;
+    display: inline-block;
+    content: url("../img/icons_down.png"); /* 輸入文字或符號 */
+    background: #ffffff;
+    color: #559AC8;
+    }
+
+/* content */
+.content h2{
+    text-align: center;
+    font-size: 36px;
+    color: #8A82CC;
+    margin-bottom: 24px;
+}
+.showlist{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.showlist li{
+    width: 464px;
+    padding-bottom: 10px;
+}
+.showlist .picblock{
+    background: url('http://khh.travel/FileArtPic.ashx?id=705&w=1280&h=960') no-repeat center;
+    background-size: cover;
+    height: 155px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #FFFFFF;
+}
+.showlist .picblock .name{
+    font-size: 24px;
+    margin: 0 0 14px 22px;
+}
+.showlist .picblock .zone{
+    margin: 0 19px 11px 0;
+}
+.showlist .infoblock{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.showlist .infoblock .contact{
+    display: flex;
+    flex-direction: column;
+    line-height: 32px;
+}
+.showlist .infoblock .tag{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    line-height: 32px;
+}
+.showlist .infoblock img{
+    padding-right: 10px;
+}
+
+/* footer */
+.footer{
+    background-color: #559AC8;
+    text-align: center;
+    padding: 17px 0;
+    line-height: 30px;
+}
+.footer p{
+    color: #FFD366;
+}
+
+/* 回到頂端 */
+.gotop{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
